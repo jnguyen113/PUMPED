@@ -11,18 +11,29 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    @IBOutlet weak var Label: UILabel!
+
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view. 
         //TESTING
-        Label.text = ""
     }
 
-    @IBAction func Incrementer(_ sender: Any) {
-        guard let presentValue = Int(Label!.text = String(newValue)
+    @IBAction func onClick(_ sender: UIButton, forEvent event: UIEvent) {
+        let currLabelText = label.text;
+        
+        if(currLabelText == "You just click the button"){
+            label.text = "You just click the button";
+        }else{
+            label.text = "You just click the button."
         }
+        label.sizeToFit();
     }
+    
+
+    
+}
     
 
 
