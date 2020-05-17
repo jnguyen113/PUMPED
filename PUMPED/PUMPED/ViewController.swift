@@ -10,14 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var Button: UIButton!
+    
     @IBOutlet weak var Label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view. 
         //TESTING
+        Label.text = ""
     }
 
+    @IBAction func Incrementer(_ sender: Any) {
+        guard let presentValue = Int(Label!.text = String(newValue)
+        }
+    }
+    
 
-}
 
