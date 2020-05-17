@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         //TESTING
     }
 
-    @IBAction func onClick(_ sender: UIButton, forEvent event: UIEvent) {
+    @IBAction func onClick(_ sender: UIButton) {
         let currLabelText = label.text;
         
         if(currLabelText == "You just click the button"){
