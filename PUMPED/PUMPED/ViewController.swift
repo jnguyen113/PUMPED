@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         let currLabelText = label.text;
         
         if(currLabelText == "You just click the button"){
-            label.text = "You just click the button";
+            label.text = "You just click the button again.";
         }else{
             label.text = "You just click the button."
         }
