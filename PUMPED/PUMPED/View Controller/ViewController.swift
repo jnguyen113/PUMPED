@@ -10,9 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var presentValue = 0
 
-    @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
         
@@ -21,11 +19,7 @@ class ViewController: UIViewController {
         //TESTING
     }
 
-    @IBAction func onClick(_ sender: UIButton) {
-        presentValue = presentValue+1
-        label.text = "\(presentValue)"
-        label.sizeToFit();
-    }
+
         
 }
     
