@@ -6,6 +6,7 @@ target 'PUMPED' do
   use_frameworks!
 
   # Pods for PUMPED
+
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
 end
