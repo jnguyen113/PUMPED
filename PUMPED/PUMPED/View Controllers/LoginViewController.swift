@@ -17,11 +17,12 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        checkUserInfo()
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        checkUserInfo()
+//    }
 
     @IBAction func loginTapped(_ sender: Any) {
             validateFields()

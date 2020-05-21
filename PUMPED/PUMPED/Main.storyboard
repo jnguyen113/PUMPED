@@ -15,21 +15,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PUMPED Wallpaper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hiS-kV-ENC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aR-RQ-uZh">
-                                <rect key="frame" x="186" y="124.5" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="166.5" y="104" width="81" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HDS-5a-hsK">
                                 <rect key="frame" x="82" y="204" width="250" height="76"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pHL-hT-aRo">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="pHL-hT-aRo">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gXN-8A-GYp">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="gXN-8A-GYp">
                                         <rect key="frame" x="0.0" y="42" width="250" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -40,18 +44,24 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6oB-oU-wuu">
-                                <rect key="frame" x="153.5" y="414" width="107" height="68"/>
+                                <rect key="frame" x="139.5" y="408" width="135" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nA-2e-eLc">
-                                        <rect key="frame" x="32.5" y="0.0" width="42" height="30"/>
-                                        <state key="normal" title="Log In"/>
+                                        <rect key="frame" x="40.5" y="0.0" width="54" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Log In">
+                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="loginTapped:" destination="JYf-aq-GU8" eventType="touchUpInside" id="F9m-o2-6Cl"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E25-Kx-dfL">
-                                        <rect key="frame" x="0.0" y="38" width="107" height="30"/>
-                                        <state key="normal" title="Create Account"/>
+                                        <rect key="frame" x="0.0" y="44" width="135" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Create Account">
+                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="createAccountTap:" destination="JYf-aq-GU8" eventType="touchUpInside" id="lcS-jw-i3u"/>
                                         </connections>
@@ -59,7 +69,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6oB-oU-wuu" firstAttribute="centerX" secondItem="Lbv-Tr-wif" secondAttribute="centerX" id="3Vm-fg-s39"/>
                             <constraint firstItem="HDS-5a-hsK" firstAttribute="centerX" secondItem="Lbv-Tr-wif" secondAttribute="centerX" id="7hl-nt-0zq"/>
@@ -90,33 +100,35 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4mF-JC-uRN">
                                 <rect key="frame" x="82" y="203.5" width="250" height="76"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XcJ-nU-JCS">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="XcJ-nU-JCS">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="DMc-Xk-pFe"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xx0-g1-JGg">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Xx0-g1-JGg">
                                         <rect key="frame" x="0.0" y="42" width="250" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="ZJH-v1-6UB"/>
-                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RNT-zZ-07C">
-                                <rect key="frame" x="93.5" y="414" width="227" height="68"/>
+                                <rect key="frame" x="62.5" y="408" width="289" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbj-rz-llf">
-                                        <rect key="frame" x="86.5" y="0.0" width="54" height="30"/>
+                                        <rect key="frame" x="109.5" y="0.0" width="70" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
                                             <action selector="SignUpTap:" destination="qBg-tU-2si" eventType="touchUpInside" id="3kK-qT-Kc1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkZ-gu-g4S">
-                                        <rect key="frame" x="0.0" y="38" width="227" height="30"/>
+                                        <rect key="frame" x="0.0" y="44" width="289" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Already Have An Account? Log In"/>
                                         <connections>
                                             <action selector="alreadyHaveAccountTap:" destination="qBg-tU-2si" eventType="touchUpInside" id="zOo-IC-sLj"/>
@@ -124,21 +136,24 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kD7-dM-0P5">
-                                <rect key="frame" x="169" y="129" width="76" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kD7-dM-0P5">
+                                <rect key="frame" x="149" y="108" width="116" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Ggl-ax-qY3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="4mF-JC-uRN" firstAttribute="centerX" secondItem="RNT-zZ-07C" secondAttribute="centerX" id="0p2-kh-04I"/>
-                            <constraint firstItem="4mF-JC-uRN" firstAttribute="centerX" secondItem="40O-4n-37E" secondAttribute="centerX" id="8Za-su-bVC"/>
-                            <constraint firstItem="RNT-zZ-07C" firstAttribute="centerY" secondItem="40O-4n-37E" secondAttribute="centerY" id="bff-he-2vB"/>
-                            <constraint firstItem="4mF-JC-uRN" firstAttribute="top" secondItem="40O-4n-37E" secondAttribute="top" constant="203.5" id="dRo-Uw-OUE"/>
-                            <constraint firstItem="4mF-JC-uRN" firstAttribute="top" secondItem="kD7-dM-0P5" secondAttribute="bottom" constant="54" id="uw9-aU-Ufk"/>
-                            <constraint firstItem="4mF-JC-uRN" firstAttribute="centerX" secondItem="kD7-dM-0P5" secondAttribute="centerX" id="xTP-CC-YEu"/>
+                            <constraint firstItem="RNT-zZ-07C" firstAttribute="centerY" secondItem="40O-4n-37E" secondAttribute="centerY" id="3i0-C4-d4d"/>
+                            <constraint firstItem="kD7-dM-0P5" firstAttribute="centerX" secondItem="40O-4n-37E" secondAttribute="centerX" id="DEf-le-CY6"/>
+                            <constraint firstItem="kD7-dM-0P5" firstAttribute="centerX" secondItem="4mF-JC-uRN" secondAttribute="centerX" id="FrM-Gr-4aR"/>
+                            <constraint firstItem="kD7-dM-0P5" firstAttribute="centerX" secondItem="RNT-zZ-07C" secondAttribute="centerX" id="ZTF-fg-tnS"/>
+                            <constraint firstItem="4mF-JC-uRN" firstAttribute="top" secondItem="kD7-dM-0P5" secondAttribute="bottom" constant="53.5" id="g0W-VX-aoM"/>
+                            <constraint firstItem="kD7-dM-0P5" firstAttribute="top" secondItem="djW-kk-ajM" secondAttribute="top" constant="64" id="ttH-Wl-Opg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="djW-kk-ajM"/>
                     </view>
@@ -159,10 +174,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PUMPED Wallpaper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jQX-Ua-00C">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to PUMPED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bfp-M4-eTZ">
-                                <rect key="frame" x="125" y="438" width="164.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="13.5" y="423" width="387.5" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -179,4 +198,7 @@
             <point key="canvasLocation" x="1544.9275362318842" y="24.776785714285712"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="PUMPED Wallpaper.jpg" width="1080" height="1920"/>
+    </resources>
 </document>
