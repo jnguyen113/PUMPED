@@ -10,19 +10,15 @@
         <!--Login View Controller-->
         <scene sceneID="N1I-WD-PPW">
             <objects>
-                <viewController storyboardIdentifier="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JYf-aq-GU8" customClass="LoginViewController" customModule="PUMPED" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JYf-aq-GU8" customClass="LoginViewController" customModule="PUMPED" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lbv-Tr-wif">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PUMPED Wallpaper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hiS-kV-ENC">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aR-RQ-uZh">
-                                <rect key="frame" x="166.5" y="104" width="81" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PUMPED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aR-RQ-uZh">
+                                <rect key="frame" x="139.5" y="104" width="135.5" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.3532592666634512" green="1" blue="0.9636213797478187" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HDS-5a-hsK">
@@ -43,24 +39,39 @@
                                     <constraint firstAttribute="width" constant="250" id="rhK-C6-clu"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6oB-oU-wuu">
-                                <rect key="frame" x="139.5" y="408" width="135" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6o-tJ-IYG">
+                                <rect key="frame" x="92" y="584" width="230" height="45"/>
+                                <color key="backgroundColor" red="0.1830047413" green="0.66418445290000006" blue="0.77766758420000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Sign In With Google">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="SignInGTap:" destination="JYf-aq-GU8" eventType="touchUpInside" id="sA2-rD-8qj"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="FAc-5j-ehI">
+                                <rect key="frame" x="92" y="515" width="230" height="54"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nA-2e-eLc">
-                                        <rect key="frame" x="40.5" y="0.0" width="54" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nA-2e-eLc">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="54"/>
+                                        <color key="backgroundColor" red="0.1830047413" green="0.66418445290000006" blue="0.77766758420000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <color key="tintColor" red="0.2733531240995189" green="0.56448190122555153" blue="0.77766758419689119" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Log In">
-                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="loginTapped:" destination="JYf-aq-GU8" eventType="touchUpInside" id="F9m-o2-6Cl"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E25-Kx-dfL">
-                                        <rect key="frame" x="0.0" y="44" width="135" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Create Account">
-                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E25-Kx-dfL">
+                                        <rect key="frame" x="111" y="0.0" width="119" height="54"/>
+                                        <color key="backgroundColor" red="0.1830047413" green="0.66418445290000006" blue="0.77766758420000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <color key="tintColor" red="0.2733531240995189" green="0.56448190122555153" blue="0.77766758419689119" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="createAccountTap:" destination="JYf-aq-GU8" eventType="touchUpInside" id="lcS-jw-i3u"/>
@@ -69,14 +80,18 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.43859911383702688" green="0.58444913862781478" blue="0.80995315313339233" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6oB-oU-wuu" firstAttribute="centerX" secondItem="Lbv-Tr-wif" secondAttribute="centerX" id="3Vm-fg-s39"/>
+                            <constraint firstItem="j6o-tJ-IYG" firstAttribute="centerX" secondItem="Lbv-Tr-wif" secondAttribute="centerX" id="0Xa-hB-r6E"/>
                             <constraint firstItem="HDS-5a-hsK" firstAttribute="centerX" secondItem="Lbv-Tr-wif" secondAttribute="centerX" id="7hl-nt-0zq"/>
                             <constraint firstItem="HDS-5a-hsK" firstAttribute="top" secondItem="Lbv-Tr-wif" secondAttribute="top" constant="204" id="9Os-ll-UwT"/>
+                            <constraint firstItem="FAc-5j-ehI" firstAttribute="leading" secondItem="j6o-tJ-IYG" secondAttribute="leading" id="HgQ-Gx-hDf"/>
                             <constraint firstItem="HDS-5a-hsK" firstAttribute="top" secondItem="8aR-RQ-uZh" secondAttribute="bottom" constant="59" id="Xzw-VZ-fKx"/>
+                            <constraint firstItem="j6o-tJ-IYG" firstAttribute="centerX" secondItem="Lbv-Tr-wif" secondAttribute="centerX" id="YVU-kG-fd0"/>
+                            <constraint firstItem="9wu-rJ-8qS" firstAttribute="bottom" secondItem="j6o-tJ-IYG" secondAttribute="bottom" constant="233" id="cfq-vi-Hxo"/>
                             <constraint firstItem="HDS-5a-hsK" firstAttribute="centerX" secondItem="8aR-RQ-uZh" secondAttribute="centerX" id="gLe-yQ-E3J"/>
-                            <constraint firstItem="6oB-oU-wuu" firstAttribute="centerY" secondItem="Lbv-Tr-wif" secondAttribute="centerY" id="jAQ-bP-fzg"/>
+                            <constraint firstItem="j6o-tJ-IYG" firstAttribute="top" secondItem="FAc-5j-ehI" secondAttribute="bottom" constant="15" id="uxt-Bg-c0d"/>
+                            <constraint firstItem="j6o-tJ-IYG" firstAttribute="centerX" secondItem="Lbv-Tr-wif" secondAttribute="centerX" id="y9U-gq-Lip"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9wu-rJ-8qS"/>
                     </view>
@@ -88,6 +103,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RNr-Mo-wwP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="176.81159420289856" y="24.776785714285712"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8ay-ID-iqy">
+            <objects>
+                <viewController storyboardIdentifier="google" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xy8-UP-PIu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eF4-Va-Q4q" customClass="GIDSignInButton">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gzI-cN-Mla"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QSo-Gv-Pr5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872" y="25"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="XUY-y6-sFa">
@@ -164,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAc-4X-Q3m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="840.57971014492762" y="24.776785714285712"/>
+            <point key="canvasLocation" x="1568" y="25"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="M9q-Oj-Pcr">
@@ -195,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ome-af-Exq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1544.9275362318842" y="24.776785714285712"/>
+            <point key="canvasLocation" x="2275" y="25"/>
         </scene>
     </scenes>
     <resources>

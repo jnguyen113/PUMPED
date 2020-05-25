@@ -12,6 +12,7 @@
 		C109F2EE2474810C004255CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C109F2ED2474810C004255CB /* Main.storyboard */; };
 		C16452CF2474C6830001F0F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16452CE2474C6830001F0F2 /* LoginViewController.swift */; };
 		C16452D12474C6970001F0F2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16452D02474C6970001F0F2 /* SignUpViewController.swift */; };
+		C187B90A24787FC000E71F38 /* GoogleSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C187B90924787FC000E71F38 /* GoogleSignInViewController.swift */; };
 		C1A3848B24760C8500C36B7C /* PUMPED Wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C1A3848A24760C8500C36B7C /* PUMPED Wallpaper.jpg */; };
 		C1AFC90C2471B558000C5078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AFC90B2471B558000C5078 /* AppDelegate.swift */; };
 		C1AFC90E2471B558000C5078 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AFC90D2471B558000C5078 /* SceneDelegate.swift */; };
@@ -25,6 +26,7 @@
 		C109F2ED2474810C004255CB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C16452CE2474C6830001F0F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C16452D02474C6970001F0F2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C187B90924787FC000E71F38 /* GoogleSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewController.swift; sourceTree = "<group>"; };
 		C1A3848A24760C8500C36B7C /* PUMPED Wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "PUMPED Wallpaper.jpg"; sourceTree = "<group>"; };
 		C1AFC9082471B558000C5078 /* PUMPED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PUMPED.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1AFC90B2471B558000C5078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				C16452CE2474C6830001F0F2 /* LoginViewController.swift */,
+				C187B90924787FC000E71F38 /* GoogleSignInViewController.swift */,
 				C16452D02474C6970001F0F2 /* SignUpViewController.swift */,
 			);
 			path = "View Controllers";
@@ -128,6 +131,7 @@
 				C1AFC9052471B558000C5078 /* Frameworks */,
 				C1AFC9062471B558000C5078 /* Resources */,
 				B7E6BFDDF8C95D862EDF2647 /* [CP] Embed Pods Frameworks */,
+				6629D7408921B96072DA4B67 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,6 +191,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6629D7408921B96072DA4B67 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PUMPED/Pods-PUMPED-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PUMPED/Pods-PUMPED-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PUMPED/Pods-PUMPED-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B7E6BFDDF8C95D862EDF2647 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C16452CF2474C6830001F0F2 /* LoginViewController.swift in Sources */,
+				C187B90A24787FC000E71F38 /* GoogleSignInViewController.swift in Sources */,
 				C1AFC90C2471B558000C5078 /* AppDelegate.swift in Sources */,
 				C1AFC90E2471B558000C5078 /* SceneDelegate.swift in Sources */,
 				C16452D12474C6970001F0F2 /* SignUpViewController.swift in Sources */,

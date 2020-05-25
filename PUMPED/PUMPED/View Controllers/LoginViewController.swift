@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var Email: UITextField!
@@ -16,7 +17,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       
+         //Do any additional setup after loading the view.
 
     }
     
@@ -28,8 +30,15 @@ class LoginViewController: UIViewController {
             validateFields()
     }
     
+    @IBAction func SignInGTap(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "google")
+        vc?.modalPresentationStyle = .overFullScreen
+        present(vc!, animated: true)
+    }
     
-    
+ 
+
     @IBAction func createAccountTap(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main" ,bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "signUp")
@@ -67,4 +76,6 @@ class LoginViewController: UIViewController {
             present(vc, animated: true)
         }
     }
+    
+    
 }
