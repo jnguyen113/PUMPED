@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import GoogleSignIn
+import Firebase
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var Email: UITextField!
@@ -16,8 +17,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        
+        let ref = Database.database().reference(fromURL: "https://pumped-87951.firebaseio.com/")
+    
+            
          //Do any additional setup after loading the view.
 
     }
